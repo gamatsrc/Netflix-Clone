@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+      <link rel="icon" type="image/x-icon" href="/vitamin-d.png">
+
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <div class="homepage">
+        <div class="main1">
+            <div class="air1">Dhiraj Goyal</div>
+            <div class="air2">"Capturing Emotions, Crafting Memories"</div>
+            <div class="air3">Photographer | Videographer | Cinematographer</div>
+            <div class="air4">Based in India</div>
+            <div class="main-btn">
+                <button class="btn btn-yellow"><a href="https://www.instagram.com/kochi_captures?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a></button>
+                <button class="btn btn-white"> </button>
+            </div>
+            <div class="cover">
+            </div>
+        </div>
+
+        <div class="main2">
+            <img src="/assets2/Screenshot_2025-08-03-16-11-14-746_com.instagram.android.jpg"
+                alt="Image cannot be displayed" class="img1" height="60%" width="50%">
+            <div class="main2a">
+                <div class="air5">About Me</div>
+                <div class="air6">More than Just a Lens</div>
+                <p class="p_element">I'm a passionate visual storyteller who believes that every moment holds a unique emotion waiting to
+                    be captured. Through my lens, I transform fleeting instances into timeless memories that speak to
+                    the heart.
+                    <br>
+                    <br> My approach is rooted in candid, documentary-style photography with a focus on authenticity. I
+                    don't just take pictures – I craft cinematic narratives that connect with viewers on an emotional
+                    level, whether it's the tender glance between newlyweds or the pure joy of a child's birthday
+                    celebration. <br>
+
+                    <br> With over 5+ years of telling visual stories that connect, I've had the privilege of
+                    documenting hundreds of precious moments across India, always with the same commitment: to capture
+                    the real, unguarded emotions that make each story extraordinary.
+                </p>
+            </div>
+        </div>
+        <div class="main3 main3a">
+            <h5 class="h5_element">Portfolio</h5>
+            <h2 class="h2_element">Where Emotion Meets visual</h2>
+            <p class="p_element">Explore a collection of moments that showcase the art of visual storytelling across different genres and
+                styles.</p>
+            <div class="gallery-wrap">
+                <img src="assets2/previous.png" id="backBtn">
+                <div class="gallery">
+                    <div>
+                        <!-- <span><img src="assets2/-636301676.jpg" alt=""></span> -->
+                        <span class="break1"><img class="slide1" src="assets2/-35084373.jpg" alt=""></span>
+                        <span class="break1"><img class="slide2"  src="assets2/-842778894.jpg" alt=""></span>
+                        <span class="break1"><img class="slide3" src="assets2/1454344160.jpg" alt=""></span>
+                    </div>
+                    <div>
+                        <span class="break1"><img class="slide4" src="assets2/355652842.jpg" alt=""></span>
+                        <span class="break1"><img class="slide5" src="assets2/718718849.jpg" alt=""></span>
+                        <span class="break1"><img class="slide6" src="assets2/-1441135912.jpg" alt=""></span>
+                        <!-- <span><img src="assets2/397245378.jpg" alt=""></span> -->
+
+                    </div>
+                </div>
+                <img src="assets2/next.png" id="nextBtn">
+            </div>
+        </div>
+        <div class="main4">
+            <h5 class="h5_element">GET IN TOUCH</h5>
+            <h1 class="h1_element">Let's Create Something Beautiful</h1>
+            <p class="p_element">Ready to capture your special moments? I'd love to hear about your vision and discuss how we can bring
+                your story to life.</p>
+            <div class="container">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <!-- <h3 class="h3_element">Raise a Request Callback</h3> -->
+                    <input type="hidden" name="access_key" value="f9c579db-f4c6-441e-aa72-3748ad3b0d63">
+<br>
+                    <input type="text" name="full_name" id="name" placeholder="Your Name" required>
+                    <br> <input type="email" name="email" id="email" placeholder="Email id" required>
+                    <br><input type="text" id="phone" name="phone_no" placeholder="Phone no" required>
+                    <br> <textarea id="message" rows="4" name="message" placeholder="Enter Your Message"></textarea>
+                    <br><button type="submit">Send</button>
+                </form>
+            </div>
+            <hr>
+            <p class="p_element_courtesy">Made with ❤️ by Matvel Karunakar </p><br>
+        </div>
+    </div>
+      <script>
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+            scrollContainer.style.scrollBehavior = "auto";
+        });
+
+        nextBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+    </script>
+ 
+</body>
+
+</html>
